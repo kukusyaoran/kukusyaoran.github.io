@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kukusyaoran.github.io</id>
     <title>kukusyaoran</title>
-    <updated>2019-11-07T05:56:22.731Z</updated>
+    <updated>2019-11-07T05:57:35.754Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kukusyaoran.github.io"/>
     <link rel="self" href="https://kukusyaoran.github.io/atom.xml"/>
@@ -16,8 +16,12 @@
         <link href="https://kukusyaoran.github.io/post/ren-lei-guan-cha-ri-ji-wen-ben-wei-xiao-dui">
         </link>
         <updated>2019-11-07T05:49:27.000Z</updated>
+        <summary type="html"><![CDATA[<p>题记：<br>
+我们开了一个比较特别的主题，我们用了大概半年的时间试图记录思维的过程，在机器学习这个切入口上，做了一些相关的认知上的探索，以下是部分笔记（采用倒叙方式呈现，很多也许跟机器学习并无直接关系，但它或许是产生思维序列的一部分，这个或许可以用来探讨我们如何在拿到一个全新的概念的时候在认知上的反应，试图追溯这一过程，试图搞清楚意识以什么样的形式存在并作用于人脑，形成并影响整个人格系统，或许也是我们在活着的过程中产生的一些关于思维的东西）（主要是防止以后有人再问类似这样的问题：你怎么会变成这样了啊？我们可以理直气壮地把这些所有的问题打印出来，然后甩到对方的脸上并小声地告诉他：诺～就是这样咯！）（另外，这些资料「小声地」也许会给我们以后的“治疗”有所帮助也说不定呢～）：</p>
+]]></summary>
         <content type="html"><![CDATA[<p>题记：<br>
 我们开了一个比较特别的主题，我们用了大概半年的时间试图记录思维的过程，在机器学习这个切入口上，做了一些相关的认知上的探索，以下是部分笔记（采用倒叙方式呈现，很多也许跟机器学习并无直接关系，但它或许是产生思维序列的一部分，这个或许可以用来探讨我们如何在拿到一个全新的概念的时候在认知上的反应，试图追溯这一过程，试图搞清楚意识以什么样的形式存在并作用于人脑，形成并影响整个人格系统，或许也是我们在活着的过程中产生的一些关于思维的东西）（主要是防止以后有人再问类似这样的问题：你怎么会变成这样了啊？我们可以理直气壮地把这些所有的问题打印出来，然后甩到对方的脸上并小声地告诉他：诺～就是这样咯！）（另外，这些资料「小声地」也许会给我们以后的“治疗”有所帮助也说不定呢～）：</p>
+<!-- more -->
 <p>人类的脑子是有记忆片段的，这个记忆片段来自于联想，由一个特定的画面或者思维序列联想到另一个特定的记忆。比如说思维过程是这样：我想吃面包了--买面包的步骤--把面包房的消费卡从柜子里拿出来--我上一次放回卡的时候是不是忘记锁柜子了……你可以看到原本一个想吃面包的简单思维活动，但最终思维却停留在是否忘记锁柜子这个细节上？为什么思维会产生如此发散性的结果呢？也就是它并不是单纯地我们想什么就得到什么，实际上如果仅仅只是想吃面包并不需要思维活动，只是把它列上代办清单，然后设置一个动作序列：出门--去面包店--买面包，执行这个动作序列就可以出色的完成这次想吃面包的需求了，这也正是计算机的逻辑思维所运作的原理。但人脑不一样，人脑这个软件系统它并不基于逻辑来完成需求，这很多时候使我们处理事务的效率大打折扣，我们花费了大量精力在细枝末节上很多时候只是因为我们的思维扩展性使得我们无法集中于用逻辑处理问题这个简单的事实上。所以，我们用理性和感性来区分这两套思维方式，但问题是没有人告诉你标准在哪？没人告诉你什么时候该用理性思维什么时候该用上一点点感性思维，传统教育似乎从来不注重这个关于思维方法的训练，导致了很多人在长大后在处理日常事务的时候没有一个判断的标准，他所有的依据都变成了“我认为正确”。可主观从来都不是一个标准，这个“我认为正确”的依据它不是一个基于逻辑产生的标准，它可以受个人情感因素的影响，可以受别人的动摇，甚至受道德的支配，任何别有用心的外部因素都可能短暂地成为这个标准的支配因素，很多人用原则来逃脱这一心理支配，但原则的问题是它试图用一个不变的概念或者认知来处理万变的事务，一旦原则动摇整个体系就会动摇甚至面临崩溃的危机，它直接带来更多的关于自我和道德的压力面临的判断时产生的情绪紧张。所以，个人觉得关于人工智能和机器学习，尤其是机器学习普通人可以反过来从“机器向人类学习”的这个过程来看人类思维的过程，了解和意识到人类思维受哪些影响，探讨作为完美逻辑思维所运行的高效率计算机程序如何处理感性和理性思维，这是一个关于如何创造一个完美思维的探讨。--20191106</p>
 <p>如何判断一个人的话是不是属于无意识的表达范畴？很简单，你问他定义是什么。比如，你一个人指着你的鼻子跟你说“你就是个傻叉！”这个时候你问他“如何定义这个傻叉？”如果他说不出来，那他就是无意识的表达，或者你说不出来没关系，我给你一天时间你给我写出来，你给我定义出来“我是个傻叉”。如果一个人能成功定义一个东西那这个行为或者思想就属于意识部分，反之则属于无意识部分。但大部分的日常表达是属于无意识的部分的，我们的话不可能或只有极少部分是经过深思熟虑后的结果。<br>
 这就是我们要训练思维的原因，训练用逻辑来分析用意识来表达，这是思维的一个过程，它应该是一个受控的部分，受意识主导而不是无意识的表达，这是我认为人之所以区别动物的价值所在。--20191106</p>
@@ -272,10 +276,10 @@ https://www.madewill.com/thinking-model/ecosystem-thinking.html--20190928</p>
 <p>很多人似乎还不是很明白，年轻人为什么喜欢网购？网购的本质是使得信息更加透明。获取信息渠道是否通畅是公平交易的基本原则。年轻人的思维方式使他们更容易知道自己想要什么，他们通过扩展信息的渠道收集更多信息达到评估“欲望”的条件，--20190927</p>
 <p>一切营销都是指向人的无意识状态（摘录）--20190927</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-774691"><label class="task-list-item-label" for="task-item-774691"> 理智是自我控制本我的过程吗？如果是，那么……</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8137671"><label class="task-list-item-label" for="task-item-8137671"> 自我和本我都属于无意识范畴，无意识是影响意识产生的重要因素，那么属于意识的理智是如何反作用于无意识的自我的呢？</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-138741"> 所以问题就变成了“理智到底是属于意识还是无意识”范畴？<br>
-<label class="task-list-item-label" for="task-item-138741"> 所以问题就变成了“理智到底是属于意识还是无意识”范畴？
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5435872"><label class="task-list-item-label" for="task-item-5435872"> 理智是自我控制本我的过程吗？如果是，那么……</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5372052"><label class="task-list-item-label" for="task-item-5372052"> 自我和本我都属于无意识范畴，无意识是影响意识产生的重要因素，那么属于意识的理智是如何反作用于无意识的自我的呢？</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3154765"> 所以问题就变成了“理智到底是属于意识还是无意识”范畴？<br>
+<label class="task-list-item-label" for="task-item-3154765"> 所以问题就变成了“理智到底是属于意识还是无意识”范畴？
 本人是个体心理学的推崇者，所以我觉得幸福是来源于内心的，而掌握如何获知自己的内心想法是这所有一切的第一步--20190927</label></li>
 </ul>
 <p>我能给你解释什么叫痛，但我永远无法向你描述什么是悲伤。--20190927</p>
@@ -572,8 +576,8 @@ https://www.youtube.com/watch?v=ZuQfzu1U2eI（摘录）--20190815</p>
 <p>血统论会导致民族主义，血统论是错误的。政治认同不要血统认同。<br>
 反对血统论（摘录）--20190812</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1665199"> 徐不会，徐不该，徐不改<br>
-<label class="task-list-item-label" for="task-item-1665199"> 徐不会，徐不该，徐不改
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2347531"> 徐不会，徐不该，徐不改<br>
+<label class="task-list-item-label" for="task-item-2347531"> 徐不会，徐不该，徐不改
 #名字--20190812</label></li>
 </ul>
 <p>中国教育的本质是什么？一、挑选听话的人；二、养“韭菜”。（摘录）--20190812</p>
