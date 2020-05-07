@@ -2,18 +2,56 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kukusyaoran.github.io</id>
     <title>kukusyaoran</title>
-    <updated>2019-11-07T06:13:32.370Z</updated>
+    <updated>2020-05-07T14:06:40.535Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kukusyaoran.github.io"/>
     <link rel="self" href="https://kukusyaoran.github.io/atom.xml"/>
     <subtitle>Human knowledge  belongs to the world.</subtitle>
     <logo>https://kukusyaoran.github.io/images/avatar.png</logo>
     <icon>https://kukusyaoran.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2019, kukusyaoran</rights>
+    <rights>All rights reserved 2020, kukusyaoran</rights>
+    <entry>
+        <title type="html"><![CDATA[计算机内核架构与人类任务处理系统]]></title>
+        <id>https://kukusyaoran.github.io/post/Computer-science-and-human-decision/</id>
+        <link href="https://kukusyaoran.github.io/post/Computer-science-and-human-decision/">
+        </link>
+        <updated>2020-05-07T13:55:13.000Z</updated>
+        <summary type="html"><![CDATA[<p>#####<em>摘要:本文通过对计算机内核构架的抽象描述来探讨人类在任务处理上的两种不同模式，是关于理性分析在认知上的可能描述。</em></p>
+]]></summary>
+        <content type="html"><![CDATA[<p>#####<em>摘要:本文通过对计算机内核构架的抽象描述来探讨人类在任务处理上的两种不同模式，是关于理性分析在认知上的可能描述。</em></p>
+<!-- more -->
+<h2 id="1微内核与宏内核">1.微内核与宏内核</h2>
+<p>首先，我们在这里并不讨论计算机内核在整个计算机系统里所起的作用以及实际运行逻辑，我们关心的是两种不同的内核架构，即微内核和宏内核，在概念上的抽象表述。</p>
+<p>**微内核：**将系统必须的几个关键部分组成内核，其他部分则由各种内核模块来实现。这样设计的好处是减少内核单独出错的几率。</p>
+<p>**宏内核：**宏内核的所有系统服务被封装同一个“内核空间”里运行，一个很小的错误都可能导致整个内核的崩溃。</p>
+<p>微内核可以认为设计被用来处理高效率的相对单一简单的任务，宏内核则由于采取集中封装的优势可以方便地被移植于各个平台，并用于处理相对较为复杂的任务。现代主流桌面操作系统一般采用宏内核或者两者都有的混合内核，微内核则主要用于一些单一处理方案，例如AI或者数据采集和分析。</p>
+<h2 id="2人类的判断方式">2.人类的判断方式</h2>
+<p>这里我们认为人类处理一项问题的一般逻辑方式主要有以下两种：一种是基于直觉系统的思维判断，另一种是基于认知系统的理性判断。之所以把人的所有行为都归结到判断上，是因为指导一切行为使人们去处理一项既定任务的关键点在于判断和选择。分析情境--判断情境--做出行为，这是一个人面对一项问题的基本处理流程，区分这两种思维模式的主要是分析和判断的过程，也就是思维本身。</p>
+<p><strong>基于直觉的判断：</strong></p>
+<p>​直觉包括我们的感官、知觉甚至是情绪在内的所有能够直接获得外部信息的身体渠道。直觉会随着环境的变化而变化，并且受限于个体本身的程度很大，例如每个人关于事物的不同记忆会引发不同的想象，甚至每个人所处的不同情绪状态，或易怒的，或温和的，都会直接影响对情境的分析以及判断的结果。</p>
+<p><strong>基于认知的判断：</strong></p>
+<p>基于认知的判断也被称为理性的思考。认知的范围包括需要明白“直觉”判断所依赖的那些不确定因素，用概率论的方式来解释随机事件引发的偶然性。一方面需要规避人本身在分析情境中会产生的各种偏差，例如认知性偏差、锚定效应、启发式判断，和偏好。而面对偶然性则可使用贝叶斯定理应用期望效用理论，将可能性事件用具体的概率来表述，并应用理性决策的理论公式来判断。</p>
+<h2 id="3内核架构与人类行为模式">3.内核架构与人类行为模式</h2>
+<p>我们认为人类处理普遍任务的方式主要有以下两种：</p>
+<pre><code>1.抓住最核心的问题，上来就开始干，在任务处理的过程中发现遇到的各种细节问题，并逐一进行排除，最终完成任务。
+2.任务开始前先分析并规划好需要实现的步骤和可能面临的问题，划分为多个不同的子任务，并最终整合在一起完成整个任务。
+</code></pre>
+<p>第一种我们称为简单思维模式。大多数人会倾向于选择用这种处理任务的方式，仅仅因为它对情境的分析符合我们做事情的一般逻辑和顺序。这种思维方式最简单易得，耗费的精力也最少，这是一种由无意识参与并主导的任务处理方式，它对应基于直觉的判断而进行的行为方式。与计算机系统的微内核架构相类比，它适合用来处理相对简单的任务，这些任务我们往往追求效率高于正确性。第二种我们称为认知思维模式。这种模式，首先将任务分为几个不同的模块。在应用认知思维处理一项任务时，不但要考虑整体本身，而且同时需要考虑作为整体与各个子任务模块之间的关系。认知思维对应于采用认知的判断行为，其往往用来处理较为复杂庞大的任务，同时它需要耗费的精力最多。这是一种系统性设计解决方法并分布实现的任务处理方式，由于将庞大的任务拆分成各个细小的部分，也更容易将理性和逻辑应用于各个分支条件的判断上。</p>
+<h2 id="4结论">4.结论</h2>
+<p>无论是简单思维还是认知思维，他们本质并不存在好与坏的区别，就像微内核和宏内核的架构一样，它们是为了解决实际问题而被开发出来的理论模型。实际上在日常生活中，我们会混合使用这两种思维和行为模式。对两者进行概念上的区分，是为了我们更有效率地选择何时采用何种思维模式来分析处理我们面临的实际问题。例如，我们每天都问自己“吃什么”？如果仅仅是为了填饱肚子，那么依据情绪和个人状态进行选择和判断将是最符合效率的理性行为。为什么说基于情绪也是理性选择呢？因为仅仅从效率论而言，基于直觉的判断在完成“吃什么”这个选择上所耗费的精力是最少的，我们的目的只是填饱肚子，而不是吃什么东西以及吃了之后有什么用。但如果你是一个健身爱好者，并且你正在进行一项与身体机能有关的饮食锻炼，那么你最好采用理性的思维来处理。事先进行一个完整的规划，包括食物摄入的种类、数量以及时间，并实行严格的各项监测，根据总体的预期调整计划的进行。</p>
+<p>我们认为认知的目的是我们需要在面对不同的情境的时候通过一定的普遍被认为有效的方式（或者公式）判别事物的本质，最终指导我们的行为。就像理性决策论有它的适用范围一样，普遍的基于简单思维的判断也同样适合用来应对我们日常的选择。我们强调的是通过对概念的认知选择其不同的适用范围，如果两者滥用或者乱用，就会影响整个系统的执行效率，浪费不必要的资源。例如在重大的工作问题上应用直觉判断，这可能导致整个项目的失败，严重的更可能是公司破产。又如，在个人生活上过度应用理性思维方式，特别是在与他人的关系中，这会很容易使他人对你产生缺乏情感感知的刻板印象，还会使你渐渐远离他人，绝对的理性便是绝对的自私。</p>
+<h6 id="参考">参考：</h6>
+<ul>
+<li>[1][荷]安德鲁·S·塔嫩鲍姆、赫伯特·博斯，现代操作系统. P37</li>
+<li>[2][美]雷德·海斯蒂、罗宾·道斯，不确定世界的理性选择</li>
+<li>[3][美]戴维·麦尔斯，社会心理学. P61 自我服务偏差. P76 社会信念和判断</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[人类观察日记（文本未校对）]]></title>
-        <id>https://kukusyaoran.github.io/post/a-human-observation-project</id>
-        <link href="https://kukusyaoran.github.io/post/a-human-observation-project">
+        <id>https://kukusyaoran.github.io/post/a-human-observation-project/</id>
+        <link href="https://kukusyaoran.github.io/post/a-human-observation-project/">
         </link>
         <updated>2019-11-07T05:49:27.000Z</updated>
         <summary type="html"><![CDATA[<p>题记：<br>
@@ -276,10 +314,10 @@ https://www.madewill.com/thinking-model/ecosystem-thinking.html--20190928</p>
 <p>很多人似乎还不是很明白，年轻人为什么喜欢网购？网购的本质是使得信息更加透明。获取信息渠道是否通畅是公平交易的基本原则。年轻人的思维方式使他们更容易知道自己想要什么，他们通过扩展信息的渠道收集更多信息达到评估“欲望”的条件，--20190927</p>
 <p>一切营销都是指向人的无意识状态（摘录）--20190927</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7223519"><label class="task-list-item-label" for="task-item-7223519"> 理智是自我控制本我的过程吗？如果是，那么……</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8589084"><label class="task-list-item-label" for="task-item-8589084"> 自我和本我都属于无意识范畴，无意识是影响意识产生的重要因素，那么属于意识的理智是如何反作用于无意识的自我的呢？</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2837768"> 所以问题就变成了“理智到底是属于意识还是无意识”范畴？<br>
-<label class="task-list-item-label" for="task-item-2837768"> 所以问题就变成了“理智到底是属于意识还是无意识”范畴？
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9914657"><label class="task-list-item-label" for="task-item-9914657"> 理智是自我控制本我的过程吗？如果是，那么……</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2682010"><label class="task-list-item-label" for="task-item-2682010"> 自我和本我都属于无意识范畴，无意识是影响意识产生的重要因素，那么属于意识的理智是如何反作用于无意识的自我的呢？</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3473232"> 所以问题就变成了“理智到底是属于意识还是无意识”范畴？<br>
+<label class="task-list-item-label" for="task-item-3473232"> 所以问题就变成了“理智到底是属于意识还是无意识”范畴？
 本人是个体心理学的推崇者，所以我觉得幸福是来源于内心的，而掌握如何获知自己的内心想法是这所有一切的第一步--20190927</label></li>
 </ul>
 <p>我能给你解释什么叫痛，但我永远无法向你描述什么是悲伤。--20190927</p>
@@ -575,8 +613,8 @@ https://www.youtube.com/watch?v=ZuQfzu1U2eI（摘录）--20190815</p>
 <p>血统论会导致民族主义，血统论是错误的。政治认同不要血统认同。<br>
 反对血统论（摘录）--20190812</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8067850"> 徐不会，徐不该，徐不改<br>
-<label class="task-list-item-label" for="task-item-8067850"> 徐不会，徐不该，徐不改
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-5086678"> 徐不会，徐不该，徐不改<br>
+<label class="task-list-item-label" for="task-item-5086678"> 徐不会，徐不该，徐不改
 #名字--20190812</label></li>
 </ul>
 <p>中国教育的本质是什么？一、挑选听话的人；二、养“韭菜”。（摘录）--20190812</p>
@@ -955,8 +993,8 @@ Find someone you can trust, then trust.<br>
     </entry>
     <entry>
         <title type="html"><![CDATA[关于恐惧]]></title>
-        <id>https://kukusyaoran.github.io/post/about-fear</id>
-        <link href="https://kukusyaoran.github.io/post/about-fear">
+        <id>https://kukusyaoran.github.io/post/about-fear/</id>
+        <link href="https://kukusyaoran.github.io/post/about-fear/">
         </link>
         <updated>2019-09-29T07:42:52.000Z</updated>
         <summary type="html"><![CDATA[<p>我们之前提出了一个问题，但并没有回答它：</p>
@@ -992,8 +1030,8 @@ Find someone you can trust, then trust.<br>
     </entry>
     <entry>
         <title type="html"><![CDATA[关于保险行业]]></title>
-        <id>https://kukusyaoran.github.io/post/about-Collectivism</id>
-        <link href="https://kukusyaoran.github.io/post/about-Collectivism">
+        <id>https://kukusyaoran.github.io/post/about-Collectivism/</id>
+        <link href="https://kukusyaoran.github.io/post/about-Collectivism/">
         </link>
         <updated>2019-09-12T11:18:50.000Z</updated>
         <summary type="html"><![CDATA[<h1 id="第一部分国企文化中的集体主义概念与形式">第一部分：国企文化中的集体主义概念与形式</h1>
@@ -1120,8 +1158,8 @@ Find someone you can trust, then trust.<br>
     </entry>
     <entry>
         <title type="html"><![CDATA[什么是人？]]></title>
-        <id>https://kukusyaoran.github.io/post/about-human-being</id>
-        <link href="https://kukusyaoran.github.io/post/about-human-being">
+        <id>https://kukusyaoran.github.io/post/about-human-being/</id>
+        <link href="https://kukusyaoran.github.io/post/about-human-being/">
         </link>
         <updated>2019-09-12T11:02:57.000Z</updated>
         <summary type="html"><![CDATA[<h1 id="人">人</h1>
@@ -1142,8 +1180,8 @@ Find someone you can trust, then trust.<br>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://kukusyaoran.github.io/post/hello-gridea</id>
-        <link href="https://kukusyaoran.github.io/post/hello-gridea">
+        <id>https://kukusyaoran.github.io/post/hello-gridea/</id>
+        <link href="https://kukusyaoran.github.io/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
