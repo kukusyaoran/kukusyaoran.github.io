@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kukusyaoran.github.io</id>
     <title>kukusyaoran</title>
-    <updated>2020-05-07T14:11:20.745Z</updated>
+    <updated>2020-05-07T14:15:03.348Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kukusyaoran.github.io"/>
     <link rel="self" href="https://kukusyaoran.github.io/atom.xml"/>
@@ -17,13 +17,17 @@
         </link>
         <updated>2020-05-07T13:55:13.000Z</updated>
         <summary type="html"><![CDATA[<p>#####<em>摘要:本文通过对计算机内核构架的抽象描述来探讨人类在任务处理上的两种不同模式，是关于理性分析在认知上的可能描述。</em></p>
-]]></summary>
-        <content type="html"><![CDATA[<p>#####<em>摘要:本文通过对计算机内核构架的抽象描述来探讨人类在任务处理上的两种不同模式，是关于理性分析在认知上的可能描述。</em></p>
-<!-- more -->
 <h2 id="1微内核与宏内核">1.微内核与宏内核</h2>
 <p>首先，我们在这里并不讨论计算机内核在整个计算机系统里所起的作用以及实际运行逻辑，我们关心的是两种不同的内核架构，即微内核和宏内核，在概念上的抽象表述。</p>
 <p>**微内核：**将系统必须的几个关键部分组成内核，其他部分则由各种内核模块来实现。这样设计的好处是减少内核单独出错的几率。</p>
 <p>**宏内核：**宏内核的所有系统服务被封装同一个“内核空间”里运行，一个很小的错误都可能导致整个内核的崩溃。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>#####<em>摘要:本文通过对计算机内核构架的抽象描述来探讨人类在任务处理上的两种不同模式，是关于理性分析在认知上的可能描述。</em></p>
+<h2 id="1微内核与宏内核">1.微内核与宏内核</h2>
+<p>首先，我们在这里并不讨论计算机内核在整个计算机系统里所起的作用以及实际运行逻辑，我们关心的是两种不同的内核架构，即微内核和宏内核，在概念上的抽象表述。</p>
+<p>**微内核：**将系统必须的几个关键部分组成内核，其他部分则由各种内核模块来实现。这样设计的好处是减少内核单独出错的几率。</p>
+<p>**宏内核：**宏内核的所有系统服务被封装同一个“内核空间”里运行，一个很小的错误都可能导致整个内核的崩溃。</p>
+<!-- more -->
 <p>微内核可以认为设计被用来处理高效率的相对单一简单的任务，宏内核则由于采取集中封装的优势可以方便地被移植于各个平台，并用于处理相对较为复杂的任务。现代主流桌面操作系统一般采用宏内核或者两者都有的混合内核，微内核则主要用于一些单一处理方案，例如AI或者数据采集和分析。</p>
 <h2 id="2人类的判断方式">2.人类的判断方式</h2>
 <p>这里我们认为人类处理一项问题的一般逻辑方式主要有以下两种：一种是基于直觉系统的思维判断，另一种是基于认知系统的理性判断。之所以把人的所有行为都归结到判断上，是因为指导一切行为使人们去处理一项既定任务的关键点在于判断和选择。分析情境--判断情境--做出行为，这是一个人面对一项问题的基本处理流程，区分这两种思维模式的主要是分析和判断的过程，也就是思维本身。</p>
@@ -314,10 +318,10 @@ https://www.madewill.com/thinking-model/ecosystem-thinking.html--20190928</p>
 <p>很多人似乎还不是很明白，年轻人为什么喜欢网购？网购的本质是使得信息更加透明。获取信息渠道是否通畅是公平交易的基本原则。年轻人的思维方式使他们更容易知道自己想要什么，他们通过扩展信息的渠道收集更多信息达到评估“欲望”的条件，--20190927</p>
 <p>一切营销都是指向人的无意识状态（摘录）--20190927</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7241532"><label class="task-list-item-label" for="task-item-7241532"> 理智是自我控制本我的过程吗？如果是，那么……</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7391658"><label class="task-list-item-label" for="task-item-7391658"> 自我和本我都属于无意识范畴，无意识是影响意识产生的重要因素，那么属于意识的理智是如何反作用于无意识的自我的呢？</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4017048"> 所以问题就变成了“理智到底是属于意识还是无意识”范畴？<br>
-<label class="task-list-item-label" for="task-item-4017048"> 所以问题就变成了“理智到底是属于意识还是无意识”范畴？
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8993509"><label class="task-list-item-label" for="task-item-8993509"> 理智是自我控制本我的过程吗？如果是，那么……</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8025317"><label class="task-list-item-label" for="task-item-8025317"> 自我和本我都属于无意识范畴，无意识是影响意识产生的重要因素，那么属于意识的理智是如何反作用于无意识的自我的呢？</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7107873"> 所以问题就变成了“理智到底是属于意识还是无意识”范畴？<br>
+<label class="task-list-item-label" for="task-item-7107873"> 所以问题就变成了“理智到底是属于意识还是无意识”范畴？
 本人是个体心理学的推崇者，所以我觉得幸福是来源于内心的，而掌握如何获知自己的内心想法是这所有一切的第一步--20190927</label></li>
 </ul>
 <p>我能给你解释什么叫痛，但我永远无法向你描述什么是悲伤。--20190927</p>
@@ -613,8 +617,8 @@ https://www.youtube.com/watch?v=ZuQfzu1U2eI（摘录）--20190815</p>
 <p>血统论会导致民族主义，血统论是错误的。政治认同不要血统认同。<br>
 反对血统论（摘录）--20190812</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7851260"> 徐不会，徐不该，徐不改<br>
-<label class="task-list-item-label" for="task-item-7851260"> 徐不会，徐不该，徐不改
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8792455"> 徐不会，徐不该，徐不改<br>
+<label class="task-list-item-label" for="task-item-8792455"> 徐不会，徐不该，徐不改
 #名字--20190812</label></li>
 </ul>
 <p>中国教育的本质是什么？一、挑选听话的人；二、养“韭菜”。（摘录）--20190812</p>
