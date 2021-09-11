@@ -1,0 +1,218 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>计算机内核架构与人类任务处理系统 | kukusyaoran</title>
+<link rel="shortcut icon" href="https://kukusyaoran.github.io/favicon.ico?v=1631337007981">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://kukusyaoran.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="计算机内核架构与人类任务处理系统 | kukusyaoran - Atom Feed" href="https://kukusyaoran.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="摘要:本文通过对计算机内核构架的抽象描述来探讨人类在任务处理上的两种不同模式，是关于理性分析在认知上的可能描述。
+1. 微内核与宏内核
+首先，我们在这里并不讨论计算机内核在整个计算机系统里所起的作用以及实际运行逻辑，我们关心的是两种不同的内..." />
+    <meta name="keywords" content="随笔" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://kukusyaoran.github.io">
+  <img class="avatar" src="https://kukusyaoran.github.io/images/avatar.png?v=1631337007981" alt="">
+  </a>
+  <h1 class="site-title">
+    kukusyaoran
+  </h1>
+  <p class="site-description">
+    Human knowledge belongs to the world.
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              计算机内核架构与人类任务处理系统
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-05-07
+              </span>
+              <span>
+                7 min read
+              </span>
+              
+                <a href="https://kukusyaoran.github.io/tag/THSEAas9C/" class="post-tag">
+                  # 随笔
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>摘要:本文通过对计算机内核构架的抽象描述来探讨人类在任务处理上的两种不同模式，是关于理性分析在认知上的可能描述。</p>
+<h1 id="1-微内核与宏内核">1. 微内核与宏内核</h1>
+<p>首先，我们在这里并不讨论计算机内核在整个计算机系统里所起的作用以及实际运行逻辑，我们关心的是两种不同的内核架构，即微内核和宏内核，在概念上的抽象表述。</p>
+<h2 id="微内核">微内核：</h2>
+<p>将系统必须的几个关键部分组成内核，其他部分则由各种内核模块来实现。这样设计的好处是减少内核单独出错的几率。</p>
+<h2 id="宏内核">宏内核：</h2>
+<p>宏内核的所有系统服务被封装同一个“内核空间”里运行，一个很小的错误都可能导致整个内核的崩溃。</p>
+<!-- more -->
+<p>微内核可以认为设计被用来处理高效率的相对单一简单的任务，宏内核则由于采取集中封装的优势可以方便地被移植于各个平台，并用于处理相对较为复杂的任务。现代主流桌面操作系统一般采用宏内核或者两者都有的混合内核，微内核则主要用于一些单一处理方案，例如AI或者数据采集和分析。</p>
+<h1 id="2-人类的判断方式">2. 人类的判断方式</h1>
+<p>这里我们认为人类处理一项问题的一般逻辑方式主要有以下两种：一种是基于直觉系统的思维判断，另一种是基于认知系统的理性判断。之所以把人的所有行为都归结到判断上，是因为指导一切行为使人们去处理一项既定任务的关键点在于判断和选择。分析情境--判断情境--做出行为，这是一个人面对一项问题的基本处理流程，区分这两种思维模式的主要是分析和判断的过程，也就是思维本身。</p>
+<h2 id="基于直觉的判断">基于直觉的判断：</h2>
+<p>​直觉包括我们的感官、知觉甚至是情绪在内的所有能够直接获得外部信息的身体渠道。直觉会随着环境的变化而变化，并且受限于个体本身的程度很大，例如每个人关于事物的不同记忆会引发不同的想象，甚至每个人所处的不同情绪状态，或易怒的，或温和的，都会直接影响对情境的分析以及判断的结果。</p>
+<h2 id="基于认知的判断">基于认知的判断：</h2>
+<p>基于认知的判断也被称为理性的思考。认知的范围包括需要明白“直觉”判断所依赖的那些不确定因素，用概率论的方式来解释随机事件引发的偶然性。一方面需要规避人本身在分析情境中会产生的各种偏差，例如认知性偏差、锚定效应、启发式判断，和偏好。而面对偶然性则可使用贝叶斯定理应用期望效用理论，将可能性事件用具体的概率来表述，并应用理性决策的理论公式来判断。</p>
+<h1 id="3-内核架构与人类行为模式">3. 内核架构与人类行为模式</h1>
+<p>我们认为人类处理普遍任务的方式主要有以下两种：</p>
+<ol>
+<li>抓住最核心的问题，上来就开始干，在任务处理的过程中发现遇到的各种细节问题，并逐一进行排除，最终完成任务。</li>
+<li>任务开始前先分析并规划好需要实现的步骤和可能面临的问题，划分为多个不同的子任务，并最终整合在一起完成整个任务。<br>
+第一种我们称为简单思维模式。大多数人会倾向于选择用这种处理任务的方式，仅仅因为它对情境的分析符合我们做事情的一般逻辑和顺序。这种思维方式最简单易得，耗费的精力也最少，这是一种由无意识参与并主导的任务处理方式，它对应基于直觉的判断而进行的行为方式。与计算机系统的微内核架构相类比，它适合用来处理相对简单的任务，这些任务我们往往追求效率高于正确性。第二种我们称为认知思维模式。这种模式，首先将任务分为几个不同的模块。在应用认知思维处理一项任务时，不但要考虑整体本身，而且同时需要考虑作为整体与各个子任务模块之间的关系。认知思维对应于采用认知的判断行为，其往往用来处理较为复杂庞大的任务，同时它需要耗费的精力最多。这是一种系统性设计解决方法并分布实现的任务处理方式，由于将庞大的任务拆分成各个细小的部分，也更容易将理性和逻辑应用于各个分支条件的判断上。</li>
+</ol>
+<h1 id="4-结论">4. 结论</h1>
+<p>无论是简单思维还是认知思维，他们本质并不存在好与坏的区别，就像微内核和宏内核的架构一样，它们是为了解决实际问题而被开发出来的理论模型。实际上在日常生活中，我们会混合使用这两种思维和行为模式。对两者进行概念上的区分，是为了我们更有效率地选择何时采用何种思维模式来分析处理我们面临的实际问题。例如，我们每天都问自己“吃什么”？如果仅仅是为了填饱肚子，那么依据情绪和个人状态进行选择和判断将是最符合效率的理性行为。为什么说基于情绪也是理性选择呢？因为仅仅从效率论而言，基于直觉的判断在完成“吃什么”这个选择上所耗费的精力是最少的，我们的目的只是填饱肚子，而不是吃什么东西以及吃了之后有什么用。但如果你是一个健身爱好者，并且你正在进行一项与身体机能有关的饮食锻炼，那么你最好采用理性的思维来处理。事先进行一个完整的规划，包括食物摄入的种类、数量以及时间，并实行严格的各项监测，根据总体的预期调整计划的进行。</p>
+<p>我们认为认知的目的是我们需要在面对不同的情境的时候通过一定的普遍被认为有效的方式（或者公式）判别事物的本质，最终指导我们的行为。就像理性决策论有它的适用范围一样，普遍的基于简单思维的判断也同样适合用来应对我们日常的选择。我们强调的是通过对概念的认知选择其不同的适用范围，如果两者滥用或者乱用，就会影响整个系统的执行效率，浪费不必要的资源。例如在重大的工作问题上应用直觉判断，这可能导致整个项目的失败，严重的更可能是公司破产。又如，在个人生活上过度应用理性思维方式，特别是在与他人的关系中，这会很容易使他人对你产生缺乏情感感知的刻板印象，还会使你渐渐远离他人，绝对的理性便是绝对的自私。</p>
+<h1 id="参考">参考：</h1>
+<ul>
+<li>[1][荷]安德鲁·S·塔嫩鲍姆、赫伯特·博斯，现代操作系统. P37</li>
+<li>[2][美]雷德·海斯蒂、罗宾·道斯，不确定世界的理性选择</li>
+<li>[3][美]戴维·麦尔斯，社会心理学. P61 自我服务偏差. P76 社会信念和判断</li>
+</ul>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#1-%E5%BE%AE%E5%86%85%E6%A0%B8%E4%B8%8E%E5%AE%8F%E5%86%85%E6%A0%B8">1. 微内核与宏内核</a>
+<ul>
+<li><a href="#%E5%BE%AE%E5%86%85%E6%A0%B8">微内核：</a></li>
+<li><a href="#%E5%AE%8F%E5%86%85%E6%A0%B8">宏内核：</a></li>
+</ul>
+</li>
+<li><a href="#2-%E4%BA%BA%E7%B1%BB%E7%9A%84%E5%88%A4%E6%96%AD%E6%96%B9%E5%BC%8F">2. 人类的判断方式</a>
+<ul>
+<li><a href="#%E5%9F%BA%E4%BA%8E%E7%9B%B4%E8%A7%89%E7%9A%84%E5%88%A4%E6%96%AD">基于直觉的判断：</a></li>
+<li><a href="#%E5%9F%BA%E4%BA%8E%E8%AE%A4%E7%9F%A5%E7%9A%84%E5%88%A4%E6%96%AD">基于认知的判断：</a></li>
+</ul>
+</li>
+<li><a href="#3-%E5%86%85%E6%A0%B8%E6%9E%B6%E6%9E%84%E4%B8%8E%E4%BA%BA%E7%B1%BB%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%BC%8F">3. 内核架构与人类行为模式</a></li>
+<li><a href="#4-%E7%BB%93%E8%AE%BA">4. 结论</a></li>
+<li><a href="#%E5%8F%82%E8%80%83">参考：</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://kukusyaoran.github.io/post/a-human-observation-project/">
+              <h3 class="post-title">
+                人类观察日记
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://kukusyaoran.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
